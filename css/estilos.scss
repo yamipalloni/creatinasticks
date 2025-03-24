@@ -5,11 +5,11 @@
     scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&display=swap');
 
 
-// font-family: "Outfit", sans-serif;
+// font-family: "noto-sans", sans-serif;
 // font-family: "Exo 2", sans-serif;
 
 
@@ -19,16 +19,16 @@ $ancho: 720px;
 $alto: 100px;
 $alto2: 500px;
 //fonts
-$font1: "Outfit", sans-serif;
+$font1: "noto-sans", sans-serif;
 $font2: "Exo 2", sans-serif;
 $bold1:700;
 $bold2: 500;
 // paleta colores
-$color1: #2087c9;
+$color1: #474747;
 $color2:#FFFFFF;
-$color3:#93b2c3; 
-$color4:#d8372f;
-$color5:#009EE2;
+$color3:#6e9d2a; 
+$color4:#70a01b;
+$color5:#70a01b;
 $color6:#000000;
 $color7:#000000;
 //dimensiones
@@ -103,6 +103,31 @@ $size4: 50px;
 .card-index{
     background-color: $color1;
     border: $color1;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; // Espacio entre el párrafo y el botón
+}
+
+.btn-comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $color1;
+    color: $color2; 
+    border: 2px solid $color2;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $color3;
+        color: $color2;
+    }
 }
 
 
