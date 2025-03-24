@@ -118,6 +118,36 @@
   padding: 20px;
 }
 
+.beneficios {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #6e9d2a !important;
+}
+.beneficios .row {
+  display: flex;
+  align-items: center;
+}
+.beneficios img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.beneficios .lista-beneficios {
+  list-style: none;
+  padding: 0;
+}
+.beneficios .lista-beneficios li {
+  font-family: "Exo 2", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.lista-beneficios h2 {
+  font-family: "noto-sans", sans-serif;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
 .funciones {
   padding: 20px;
 }
@@ -125,6 +155,12 @@
   font-family: "Exo 2", sans-serif;
   color: #000000;
   text-align: left;
+}
+
+.funciones h3 {
+  font-family: "noto-sans", sans-serif;
+  color: #000000;
+  padding-bottom: 20px;
 }
 
 .sec3 {
