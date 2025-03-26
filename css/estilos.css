@@ -40,6 +40,59 @@
   font-size: 15px;
 }
 
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero .content .animated-imageportada {
+  width: 80%;
+  animation: zoom 4s infinite alternate ease-in-out;
+}
+.hero .content .title {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 768px) {
+  .content .animated-image {
+    width: 150px;
+  }
+  .content .title {
+    font-size: 1.5rem;
+  }
+}
 .sec1 {
   background-color: #474747;
   padding: 20px;
