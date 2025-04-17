@@ -113,6 +113,13 @@ $size4: 50px;
                 box-shadow: none;
             }
         }
+        
+        &.scrolled {
+                .nav-link {
+                    color: $color2;
+                }
+            }
+        
     }
 
     .navbar-collapse {
