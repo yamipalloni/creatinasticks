@@ -47,9 +47,12 @@
                     <img src="./multimedia/logo.navbar.negro.png" class="logo logo-black" alt="Logo scroll"
                         style="width:40%" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                            
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item d-flex align-items-center">
@@ -81,49 +84,65 @@
     </header>
     <main>
         <section id="inicio">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Imagen para mobile -->
+            <div class="banner-mobile d-block d-md-none">
+                <img src="./multimedia/banner.mobile.png" alt="CreatinaSticks Mobile" class="img-fluid w-100">
+                <div class="mobile-caption">
+                    <h1>Creatina pura | Creapure®</h1>
+                    <p>Más energía, recuperación y crecimiento muscular</p>
+                </div>
+            </div>
+        
+            <!-- Carrusel para desktop -->
+            <div id="demo" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
                 </div>
-                <!-- The slideshow/carousel -->
+                <!-- Slides -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./multimedia/banner.frente.png" alt="CreatinaSticks" class="mx-auto d-block"
-                            style="width:100%">
+                        <img src="./multimedia/banner.frente.png" alt="CreatinaSticks" class="d-block w-100">
                         <div class="carousel-caption">
                             <h1>Potencia</h1>
                             <p>Sello Creapure | Creatina pura</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/banner.lat.png" alt="CreatinaSticks" class="mx-auto d-block"
-                            style="width:100%">
+                        <img src="./multimedia/banner.lat.png" alt="CreatinaSticks" class="d-block w-100">
                         <div class="carousel-caption">
                             <h1>Rendimiento</h1>
                             <p>Sello Creapure | Creatina pura</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./multimedia/banner.lat1.png" alt="CreatinaSticks" class="mx-auto d-block"
-                            style="width:100%">
+                        <img src="./multimedia/banner.lat1.png" alt="CreatinaSticks" class="d-block w-100">
                         <div class="carousel-caption">
                             <h1>Energía</h1>
                             <p>Sello Creapure | Creatina pura</p>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <img src="./multimedia/banner.c-sobre.png" alt="CreatinaSticks" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h1></h1>
+                            <p>Sello Creapure | Creatina pura</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
         </section>
+        
 
 
         <!--Sección 2 - Producto-->

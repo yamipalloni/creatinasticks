@@ -40,7 +40,7 @@ $size4: 50px;
 // --------------------//
 
 
-//nav nuevo desktop
+//nav desktop
 .navbar-custom {
     background-color: transparent;
     transition: background-color 0.3s ease;
@@ -90,14 +90,76 @@ $size4: 50px;
         .logo-black {
             display: inline;
         }
-    }    
+    }
+}
+
+//nav mobile 
+/* Personalizaciones para Mobile */
+@media (max-width: 768px) {
+    .navbar-custom {
+        .navbar-toggler {
+            border: none;
+            background-color: $color2;
+            opacity: 0.8;
+            margin-left: auto;
+            justify-content: end;
+    
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            }
+    
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        background-color: $color7;
+        opacity: 0.9;
+        padding: 1rem 0;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+
+        .nav-link {
+            color: $color2;
+            font-weight: 500;
+            font-size: calc($size3 - 4px);
+            margin: 0.1rem 0;
+            text-align: center;
+            font-family: $font1;
+        }
+
+        .separator {
+            display: none; // Ocultar separador en mobile
+        }
+    }
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+
+        .navbar-brand {
+            img {
+                width: auto; /* Tamaño adaptable si es necesario */
+                margin-left: 0%;
+                max-height: 180px;
+                max-width: 250px;
+            }
+        }
+        .navbar-toggler {
+            align-self: center;
+        }
+    }
 }
 
 
 
-// --------------------//
 
-//** index **//
+// Sección 1 - inicio
+
+/// escritorio
 .carousel-caption {
     h1 {
         text-align: center;
@@ -115,6 +177,53 @@ $size4: 50px;
         font-size: calc($size3 - 2px);
     }
 }
+
+/// mobile
+
+.banner-mobile {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        background-image: cover;
+        background-position: center;
+    }
+
+    .mobile-caption {
+        position: absolute;
+        bottom: 5%; // en lugar de top:50%
+        left: 50%;
+        transform: translateX(-50%); // solo mover horizontal, no vertical
+        color: $color2;
+        text-align: center;
+        font-family: $font1;
+        background: rgba(0, 0, 0, 0.5); // fondo negro semitransparente
+        padding: 1rem;
+        border-radius: 10px;
+        width: 90%;
+
+        h1 {
+            font-size: calc($size3 - 2px);
+            color: $color2;
+            font-family: $font1;
+        }
+
+        p {
+            font-size: calc($size3 - 4px);
+            color: $color2;
+            font-family: $font2;
+        }
+    }
+}
+
+
+
+
+
+
+
 
 
 // sección 2 producto

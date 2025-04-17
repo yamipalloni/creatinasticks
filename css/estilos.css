@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital@0;1&display=swap");
 * {
@@ -50,6 +51,54 @@
   display: inline;
 }
 
+/* Personalizaciones para Mobile */
+@media (max-width: 768px) {
+  .navbar-custom .navbar-toggler {
+    border: none;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    margin-left: auto;
+    justify-content: end;
+  }
+  .navbar-custom .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .navbar-custom .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-collapse {
+    background-color: #000000;
+    opacity: 0.9;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  .navbar-collapse .nav-link {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0.1rem 0;
+    text-align: center;
+    font-family: "noto-sans", sans-serif;
+  }
+  .navbar-collapse .separator {
+    display: none;
+  }
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .navbar-brand img {
+    width: auto; /* Tamaño adaptable si es necesario */
+    margin-left: 0%;
+    max-height: 180px;
+    max-width: 250px;
+  }
+  .navbar .navbar-toggler {
+    align-self: center;
+  }
+}
 .carousel-caption h1 {
   text-align: center;
   color: #FFFFFF;
@@ -62,6 +111,41 @@
   color: #FFFFFF;
   font-family: "Exo 2", sans-serif;
   font-size: 18px;
+}
+
+.banner-mobile {
+  position: relative;
+}
+.banner-mobile img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: cover;
+  background-position: center;
+}
+.banner-mobile .mobile-caption {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "noto-sans", sans-serif;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 90%;
+}
+.banner-mobile .mobile-caption h1 {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: "noto-sans", sans-serif;
+}
+.banner-mobile .mobile-caption p {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "Exo 2", sans-serif;
 }
 
 .sec2 {
